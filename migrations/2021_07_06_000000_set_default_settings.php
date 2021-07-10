@@ -15,8 +15,6 @@ return Migration::addSettings(
         'the-turk-flamoji.show_category_buttons' => true,
         'the-turk-flamoji.show_recents' => true,
         'the-turk-flamoji.recents_count' => 50,
-        'the-turk-flamoji.specify_categories' => [
-            "smileys","people","animals","food","activities","travel","objects","symbols","flags"
-        ],
+        'the-turk-flamoji.specify_categories' => "[\"smileys\",\"people\",\"animals\",\"food\",\"activities\",\"travel\",\"objects\",\"symbols\",\"flags\"]",
     ]
 );
