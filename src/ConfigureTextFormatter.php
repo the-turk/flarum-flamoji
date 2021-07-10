@@ -34,8 +34,8 @@ class ConfigureTextFormatter
                 $path = $this->url->to('forum')->base() . $path;
             }
 
-            $config->Preg->replace(
-                '/' . $emoji->text_to_replace . '/',
+            $config->Emoticons->add(
+                $emoji->text_to_replace,
                 '
                     <span class="flamoji">
                         <img src="' . $path . '" alt="' . $emoji->title . '" />
