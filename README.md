@@ -6,7 +6,7 @@ Simple emoji manager for Flarum.
 
 Screenshots:
 
-![Picker](https://i.imgur.com/ks88NKV.png)
+![Picker](https://i.imgur.com/I7l1s6O.png)
 
 - [Settings](https://i.imgur.com/hqlbvZB.png)
 - [Edit Emoji Modal](https://i.imgur.com/nonfIjB.png)
@@ -14,7 +14,7 @@ Screenshots:
 ## Features
 
 - Based on [joeattardi/emoji-button](https://github.com/joeattardi/emoji-button) repository.
-- Add an emoji picker to the text editor.
+- Add an emoji picker to the text editor (compatible with dark mode).
 - Show Twemoji or unicode emojis in the picker.
 - Search emojis in your own language.
 - Add custom emojis to the picker.
