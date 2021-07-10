@@ -43,7 +43,7 @@ app.initializers.add('the-turk-flamoji', (app) => {
   extend(ExtensionPage.prototype, 'oninit', function () {
     if (this.extension.id != 'the-turk-flamoji') return;
 
-    this.specifiedCategories = Stream(JSON.parse(this.setting(['the-turk-flamoji.specify_categories'])() || '[]'))();
+    this.specifiedCategories = Stream(JSON.parse(this.setting(['the-turk-flamoji.specify_categories'])() || []))();
   });
 
   extend(ExtensionPage.prototype, 'sections', function (items) {
