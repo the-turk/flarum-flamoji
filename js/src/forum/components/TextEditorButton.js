@@ -13,7 +13,7 @@ export default class TextEditorButton extends Button {
     const originalView = super.view(vnode);
 
     // Steal tooltip label from the Button superclass
-    const tooltipText = originalView.attrs.title;
+    const tooltipText = this.attrs.tooltipText || originalView.attrs.title;
     delete originalView.attrs.title;
 
     return (
@@ -27,5 +27,6 @@ export default class TextEditorButton extends Button {
     super.initAttrs(attrs);
 
     attrs.className = 'Button Button--icon Button--link Button-flamoji';
+    attrs.tooltipText = attrs.title;
   }
 }
