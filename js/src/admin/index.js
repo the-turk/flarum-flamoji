@@ -171,7 +171,7 @@ app.initializers.add('the-turk-flamoji', (app) => {
                   '5.0': '5.0',
                   '11.0': '11.0',
                   '12.0': '12.0',
-                  '12.1': '12.1',
+                  12.1: '12.1',
                 }}
                 buttonClassName="Button"
                 onchange={this.settings['the-turk-flamoji.emoji_version']}
