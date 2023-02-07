@@ -97,7 +97,7 @@ app.initializers.add(
 
                     import(/* webpackChunkName: "emoji-button" */ '@joeattardi/emoji-button').then(({ EmojiButton }) => {
                       this.picker = new EmojiButton({
-                        theme: 'light', // based on Flarum's less variables 
+                        theme: 'light', // based on Flarum's less variables
                         autoFocusSearch: false,
                         rootElement: this.flamojiContainer,
                         style: app.forum.attribute('flamoji.emoji_style'),
@@ -115,24 +115,24 @@ app.initializers.add(
                         custom: customEmojis,
                         i18n,
                       });
-  
+
                       this.picker.on('emoji', (selection) => {
                         let insert = selection.emoji;
-  
+
                         // Handle custom emoji.
                         // Since we can't pass a third argument into EmojiButton's emojiData
                         // option, we can use an array which stores emoji path as its key and
                         // its replacer text as its value. We're using emoji paths because
                         // they tend to be unique.
                         if (!insert) insert = customEmojiReplacers[selection.url.replace(baseUrl, '')];
-  
+
                         this.attrs.composer.editor.insertAtCursor(insert);
                       });
-  
+
                       this.isPickerLoaded = true;
                       this.isPickerLoading = false;
                       m.redraw();
-  
+
                       this.picker.togglePicker(this.flamojiButton);
                     });
                   });
